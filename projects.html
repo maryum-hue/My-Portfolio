@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +33,8 @@
       transition: all 0.3s ease;
     }
 
-    .btn-custom:hover {
+    .btn-custom:hover,
+    .filter-btn.active {
       background-color: #58a6ff;
       color: #0d1117;
     }
@@ -82,116 +82,116 @@
   <header>
     <h1>All Projects</h1>
     <a class='btn btn-outline-secondary btn-custom mt-2' href='/'>Back to Home</a>
+
+    <!-- FILTER BUTTONS -->
+    <div class="mt-4">
+      <button class="btn btn-custom filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-custom filter-btn" data-filter="html">HTML</button>
+      <button class="btn btn-custom filter-btn" data-filter="css">CSS</button>
+      <button class="btn btn-custom filter-btn" data-filter="js">JavaScript</button>
+      <button class="btn btn-custom filter-btn" data-filter="react">React</button>
+    </div>
   </header>
 
   <main class="container py-5">
     <div class="row g-4">
 
-        
- <!-- Project 11 -->
-      <div class="col-md-4 mb-4">
+       <!-- Project 11 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="0d09223e-662f-47ce-9e5c-6eea7fa145a1.png" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">AI Resume Maker</h5>
             <p class="card-text">A chatBot Resume Maker</p>
-            <a href="https://elegant-toffee-d3f76f.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://elegant-toffee-d3f76f.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 11 -->
+      <div class="col-md-4 mb-4" data-category="react">
+        <div class="card project-card">
+          <img src="ca00da8b-e2f7-4adf-8693-b1dc077c8770.png" class="card-img-top" alt="Project 10">
+          <div class="card-body">
+            <h5 class="card-title">ToDos List | React </h5>
+            <p class="card-text">A simple todos list using react</p>
+            <a href="https://todoslist-73jodummt-maryums-projects-cb5d15e5.vercel.app/?utm_source=chatgpt.com" target="_blank" class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
 
-       <!-- Project 12 -->
-      <div class="col-md-4 mb-4">
+      <!-- Project 12 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="4aafdb1a-f4f1-4b3e-ae3e-6179b3ddf74f.png" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">Movie Pro Finder</h5>
             <p class="card-text">A movie finder app using Api</p>
-            <a href="https://splendid-monstera-afc3c3.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://splendid-monstera-afc3c3.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
 
-       <!-- Project 13 -->
-      <div class="col-md-4 mb-4">
+      <!-- Project 13 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="9ae3ec78-0d6c-47d3-a12e-d69b8ab731fe.png" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">Game</h5>
-            <p class="card-text">2D fighting game made using only HTML, CSS, and JavaScript. Players can move, punch, and kick with basic controls.</p>
-            <a href="https://effortless-paletas-74f1b6.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <p class="card-text">A website designed for a restaurant, featuring menus, reservations, and location information. Built using HTML and CSS for a smooth user experience.</p>
+            <a href="https://effortless-paletas-74f1b6.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
 
-        <!-- Project 14 -->
-      <div class="col-md-4 mb-4">
+      <!-- Project 14 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="bc4e6415-b547-4201-8270-8e9fb05300fc.png" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">Student profile cards</h5>
-            <p class="card-text">
-                Cards can be edit and search
-            </p>
-            <a href="https://fantastic-palmier-a50427.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <p class="card-text">Cards can be edit and search</p>
+            <a href="https://fantastic-palmier-a50427.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-             <!-- Project 15 -->
-      <div class="col-md-4 mb-4">
+
+      <!-- Project 15 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="992db674-7949-469a-af48-21a4406efce2.png" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">Quiz app</h5>
-            <p class="card-text">
-                it's a quiz app
-            </p>
-            <a href="https://rad-lamington-5edafa.netlify.app/portal.html" class="btn btn-outline-success btn-custom">View Project</a>
+            <p class="card-text">it's a quiz app</p>
+            <a href="https://rad-lamington-5edafa.netlify.app/portal.html" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-        <!-- Project 16 --> <!--done-->
-      <div class="col-md-4 mb-4">
+
+      <!-- Project 16 -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
-          <img src="Document-mh(1).jpg" class="card-img-top" alt="Project 10">
+          <img src="Document-mh (1).jpg" class="card-img-top" alt="Project 10">
           <div class="card-body">
             <h5 class="card-title">Add To Cart</h5>
             <p class="card-text">Add To Cart responsive and working</p>
-            <a href="https://exquisite-banoffee-ff33d8.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://exquisite-banoffee-ff33d8.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-    
 
-
-      
- 
       <!-- Project 1 -->
-        <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/Weather%20App-mh.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Weather app</h5>
-            <a href="https://thriving-marshmallow-eb02ac.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
-          </div>
-        </div>
-      </div>
-
-  
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card">
-          <img src="https://poetic-pastelito-b02f71.netlify.app/img-1.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Nierie's Bakery</h5>
-            <p class="card-text">  </p>
-            <a href="https://bejewelled-pie-3524fe.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://thriving-marshmallow-eb02ac.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
@@ -201,45 +201,45 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Project 4 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
-          <img src="https://poetic-pastelito-b02f71.netlify.app/img-2.jpg" class="card-img-top" alt="Project 4">
+          <img src="d6fb97e0-c3f6-4d41-8040-b9ee4e80ab9a.png" class="card-img-top" alt="Project 4">
           <div class="card-body">
             <h5 class="card-title">NASA Website</h5>
             <p class="card-text">A space-themed website designed to provide information about NASA's missions and news. Developed using HTML and CSS, with a focus on clean, space-inspired design.</p>
-            <a href="https://dulcet-frangipane-6c815a.netlify.app/?authuser=0" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://dulcet-frangipane-6c815a.netlify.app/?authuser=0" target="_blank"   class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-  
+
       <!-- Project 5 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-5.png" class="card-img-top" alt="Project 5">
           <div class="card-body">
             <h5 class="card-title">Pokemon Website</h5>
             <p class="card-text">A fun fan website dedicated to Pokemon, featuring sections for characters, games, and news. Created with HTML and CSS for an interactive experience.</p>
-            <a href="https://effortless-pegasus-5f1b56.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://effortless-pegasus-5f1b56.netlify.app/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-  
+
       <!-- Project 6 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-6.png" class="card-img-top" alt="Project 6">
           <div class="card-body">
             <h5 class="card-title">Resume Website</h5>
             <p class="card-text">A personal resume website that highlights professional experience, skills, and accomplishments. Made entirely with HTML and CSS for an elegant presentation.</p>
-            <a href="https://maryum-hue.github.io/resume-project/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://maryum-hue.github.io/resume-project/" target="_blank"  class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
-  
+
       <!-- Project 7 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-7.jpg" class="card-img-top" alt="Project 7">
           <div class="card-body">
@@ -249,18 +249,20 @@
           </div>
         </div>
       </div>
-       <!-- Project 1 -->
- <div class="col-md-4 mb-4">
+
+      <!-- Project 1 (Calculator) -->
+      <div class="col-md-4 mb-4" data-category="js">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/Beautiful%20Calculator-mh.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Calculator</h5>
-            <a href="https://delicate-cannoli-3f7c12.netlify.app/" class="btn btn-outline-success btn-custom" target="_blank">View Project</a>
+            <a href="https://delicate-cannoli-3f7c12.netlify.app/"  target="_blank" class="btn btn-outline-success btn-custom" target="_blank">View Project</a>
           </div>
         </div>
       </div>
+
       <!-- Project 8 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-8.jpg" class="card-img-top" alt="Project 8">
           <div class="card-body">
@@ -270,9 +272,9 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Project 9 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-9.jpg" class="card-img-top" alt="Project 9">
           <div class="card-body">
@@ -282,9 +284,9 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Project 10 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/img-10.jpg" class="card-img-top" alt="Project 10">
           <div class="card-body">
@@ -294,25 +296,47 @@
           </div>
         </div>
       </div>
-       <div class="col-md-4 mb-4">
+
+      <div class="col-md-4 mb-4" data-category="html css">
         <div class="card project-card">
           <img src="https://poetic-pastelito-b02f71.netlify.app/Interactive%20Chess%20Board-mh.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Chessboard</h5>
-            <a href="https://elegant-crostata-6ebea2.netlify.app/" class="btn btn-outline-success btn-custom">View Project</a>
+            <a href="https://elegant-crostata-6ebea2.netlify.app/"  target="_blank" class="btn btn-outline-success btn-custom">View Project</a>
           </div>
         </div>
       </div>
+
     </div>
-    
   </main>
+
   <footer>
-    <p>&copy; 2025 Maryum | All Rights Reserved</p>
+    <p>&copy; 2025 Maryum | All Rights Reserved  | <a href="https://github.com/maryum-hue/" target="_blank">My GitHub</a></p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    // select the OUTER columns that hold a data-category
+    const projects = document.querySelectorAll('[data-category]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // visual active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        projects.forEach(project => {
+          const categories = project.getAttribute('data-category').split(/\s+/);
+          const match = (filter === 'all') || categories.includes(filter);
+          // Use Bootstrap utility instead of forcing display:block
+          project.classList.toggle('d-none', !match);
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
-
-
